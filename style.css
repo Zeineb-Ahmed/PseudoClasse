@@ -1,0 +1,76 @@
+*
+{
+    box-sizing:border-box;
+}
+.container
+{
+    background-color: blue;
+    color: white;
+    width: 700px;
+    padding: 5px;
+    border: 3px solid black;
+    box-sizing: content-box;
+    /*
+    box sizing
+   1- content-box+div:700px -->700px only for content
+   2- padding-box+div:700px-->700px=content+padding
+   3- border-box+div700px:700px=content+border+padding
+    */
+}
+/*
+row:2100px
+div1:900px+div2:900px+div3:300px+borders+paddings
+*/
+.title
+{
+    color:green;
+}
+h1{
+    color: red;
+}
+.title
+{
+    color: blue;
+}
+
+#paragraph1::first-line
+{
+color:orangered;
+
+}
+#paragraph1::first-letter
+{
+    font-size: 30px;
+}
+#paragraph1::selection
+{
+    font-size:20px;
+    background-color: brown;
+    color:white;
+}
+
+h2::before
+{
+    content: "Numero de l'etudiant ";
+    color: red;
+}
+h2::after{
+    content: " numero        inscription 20075";
+    color: green;
+}
+.test
+{
+    color:blue;
+}
+.test::first-line
+{
+    color: turquoise;
+}
+/*
+pseudo elements
+syntax selctor::pseudo-elements
+first-line
+first-letter
+selection
+before 
+after
